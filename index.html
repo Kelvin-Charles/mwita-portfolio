@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frank Matiku Mwita - Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .profile-section {
+            display: flex;
+            align-items: flex-start;
+            gap: 40px;
+            margin-bottom: 30px;
+            background: linear-gradient(to right, #ffffff, #f8f9fa);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .profile-image {
+            width: 300px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            flex-shrink: 0;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-image:hover {
+            transform: scale(1.02);
+        }
+
+        .profile-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .profile-intro {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: var(--text-color);
+        }
+
+        .contact-info {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+        }
+
+        .contact-info h3 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-size: 1.2em;
+            border-bottom: 2px solid var(--light-gray);
+            padding-bottom: 8px;
+        }
+
+        .contact-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .contact-list li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+            font-size: 1.05em;
+        }
+
+        .contact-list li:before {
+            content: '•';
+            color: var(--primary-color);
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .contact-list li:last-child {
+            margin-bottom: 0;
+        }
+
+        .quote-section {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            background: linear-gradient(to right, #f8f9fa, white);
+            padding: 20px;
+            border-radius: 12px;
+            margin: 20px 0;
+        }
+
+        .quote-image {
+            width: 200px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            flex-shrink: 0;
+        }
+
+        .quote-content {
+            flex: 1;
+        }
+
+        blockquote {
+            font-style: italic;
+            color: var(--text-color);
+            border-left: 4px solid var(--primary-color);
+            padding-left: 20px;
+            margin: 15px 0;
+        }
+
+        @media (max-width: 768px) {
+            .profile-section {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding: 20px;
+            }
+
+            .profile-image {
+                width: 250px;
+                margin-bottom: 25px;
+            }
+
+            .contact-list li {
+                justify-content: center;
+            }
+
+            .contact-list li:before {
+                display: none;
+            }
+
+            .quote-section {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .quote-image {
+                margin-bottom: 20px;
+            }
+
+            blockquote {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Frank Matiku Mwita</h1>
+        <nav>
+            <a href="#personal">Personal Info</a> |
+            <a href="#education">Education</a> |
+            <a href="#work">Work Experience</a> |
+            <a href="#hobbies">Hobbies</a> |
+            <a href="#links">Favorite Links</a> |
+            <a href="form.php">Information Form</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="personal">
+            <h2>Personal Information</h2>
+            <div class="profile-section">
+                <img src="imgs/profile.jpeg" alt="Frank Matiku Mwita" class="profile-image">
+                <div class="profile-content">
+                    <p class="profile-intro">
+                        Hello! I'm Frank Matiku Mwita, born in Bunda, Mara. I'm passionate about technology and currently serving as an officer in the Ministry of Home Affairs while pursuing my studies at The Open University of Tanzania.
+                    </p>
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <ul class="contact-list">
+                            <li>Phone: +255719018041</li>
+                            <li>Email: franklymwita97@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education Background</h2>
+            <table>
+                <tr>
+                    <th>Level</th>
+                    <th>Institution</th>
+                    <th>Year</th>
+                    <th>Additional Information</th>
+                </tr>
+                <tr>
+                    <td class="education-cell">Current Studies</td>
+                    <td class="education-cell">The Open University of Tanzania (OUT)</td>
+                    <td class="education-cell">Present</td>
+                    <td class="education-cell">Pursuing higher education while working full-time at the Ministry of Home Affairs. Focusing on technology and programming courses to enhance professional skills.</td>
+                </tr>
+                <tr>
+                    <td class="education-cell">Diploma</td>
+                    <td class="education-cell">DIT Electrical Engineering</td>
+                    <td class="education-cell">2020</td>
+                    <td class="education-cell">Completed with focus on electrical systems and basic programming. Participated in various technical projects and workshops.</td>
+                </tr>
+                <tr>
+                    <td>Secondary Education</td>
+                    <td>Thaqaafa SEEC School, Mwanza</td>
+                    <td>2014</td>
+                    <td>Completed secondary education with strong academic performance</td>
+                </tr>
+                <tr>
+                    <td>Primary Education</td>
+                    <td>Kataryo Primary School, Musoma</td>
+                    <td>2010</td>
+                    <td>Built strong educational foundation</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="work">
+            <h2>Work Experience</h2>
+            <p>I have been working as an officer in the Ministry of Home Affairs since 2021 to present, while simultaneously pursuing my education at The Open University of Tanzania.</p>
+        </section>
+
+        <section id="hobbies">
+            <h2>Hobbies & Interests</h2>
+            <ul>
+                <li>Watching Football</li>
+                <li>Swimming</li>
+                <li>Technology Exploration</li>
+            </ul>
+        </section>
+
+        <section id="quote">
+            <h2>My Favorite Quote</h2>
+            <div class="quote-section">
+                <img src="imgs/mandela.jpeg" alt="Nelson Mandela" class="quote-image">
+                <div class="quote-content">
+                    <blockquote>
+                        "Education is the most powerful weapon which you can use to change the world." - Nelson Mandela
+                    </blockquote>
+                    <p>This quote inspires me to continue pursuing education while working, as it emphasizes the transformative power of learning.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="links">
+            <h2>Important Links</h2>
+            <p>Here are some important links, including my current university:</p>
+            <ul>
+                <li><a href="https://www.out.ac.tz" target="_blank">The Open University of Tanzania (OUT)</a> - Where I'm currently studying</li>
+                <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a> - My favorite programming learning resource</li>
+                <li><a href="https://github.com" target="_blank">GitHub</a> - For programming projects and collaboration</li>
+                <li><a href="https://www.dit.ac.tz" target="_blank">DIT - My Previous Institution</a></li>
+                <li><a href="https://www.moha.go.tz" target="_blank">Ministry of Home Affairs</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p id="lastModified"></p>
+        <p id="pageLocation"></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
