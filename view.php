@@ -150,8 +150,8 @@ if (isset($_GET['logout'])) {
     text-decoration: none;
 }
 
-.alert {
-    padding: 15px;
+.alert {[
+    padding: 15px;]
     margin-bottom: 20px;
     border-radius: 4px;
 }
